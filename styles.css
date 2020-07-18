@@ -1,0 +1,326 @@
+* {box-sizing: border-box;}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+body { 
+  margin: 0;
+  font-family: Open Sans,Arial,sans-serif;
+  
+}
+
+.header {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 10px 30px ;
+  height: 6.3rem;
+  
+}
+
+.header .path {
+  margin-right: 15px;
+}
+
+.header a {
+  float: center;
+  color: red;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .logo {
+  /* font-size: 25px;
+  font-weight: bold; */
+  float: left;
+  width: 90px;
+  height: 90px;
+ 
+  margin: .5rem;  
+  top: 0;
+}
+
+.header a:hover {
+  opacity: .5;
+
+}
+
+/* .header a.active {
+  
+  color: white;
+} */
+
+.header-right {
+  font-size: 20px;
+  
+  margin-left: 10rem;
+  margin-top: 2.5rem;
+  
+  float: left;
+}
+
+.header-register{
+  font-size: 20px;
+  
+  float: right;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.header-register .btn{
+  background-color: #FF2A15;
+  color: white;
+}
+
+.banner{
+  margin: 0;
+  padding-top: 16px;
+  
+}
+
+ .image{
+ position: relative; 
+  width: 100%;
+  height: 45rem;
+} 
+
+.text-block {
+  position: absolute;
+  top: 20rem;
+  right: 9rem;
+  font-weight: 700;
+  color: white;
+  
+}
+
+.text-block h1{
+  font-size: 50px;
+}
+.text-block h5{
+  opacity: .7;
+  margin-left: 2rem;
+}
+
+
+footer{
+  
+  position: relative;
+}
+
+footer .copyright{
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+}
+
+footer .powered{
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+}
+
+
+.card-footer{
+  position: absolute;
+  bottom: 8rem;
+  left: 5rem;
+  color: red;
+  
+  border-radius: 1rem;
+  
+}
+
+.card-footer .card-title{
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+.card-footer {
+  background-color: rgba(245, 245, 245, 0.8)
+}
+
+.card-footer .card-subtitle{
+  padding-top: .1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.card-footer .card-link{
+  color: red;
+  font-size: 15px;
+}
+
+.icon-footer{
+  position: absolute;
+  bottom: 0;
+  left:40rem
+
+}
+
+
+.social-icon {
+  margin-right: 2rem;
+  width: 200px;
+  height: 200px;
+  color: red;
+  cursor: pointer;
+}
+
+/* .container{
+  position: absolute;
+  bottom: 0;
+  
+} */
+
+.container-fluid{
+  margin: 0;
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  padding: 3rem 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card-deck{
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  
+  transition: 150ms;
+  transform:  perspective(1000px) translateY(var(--translate-y,0));
+}
+
+.box:hover {
+  --translate-y: -2px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.5);
+}
+
+.title{
+  text-align: center;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+  padding-bottom: 2rem;
+}
+
+.competition{
+  margin: 0;
+  padding: 3rem 0;
+  
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 5rem;
+  
+  
+}
+
+.card2{
+  margin-left: 5rem;
+  margin-top: 2rem;
+  margin: 2rem 2rem 2rem 5rem ;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+}
+
+
+
+.card1-button:hover::after{
+  transition: 150ms;
+  content: "Yes Off course ! Especially we have Maximum applications received from beginners.";
+}
+
+.card2-button:hover::after{
+  transition: 150ms;
+  content: "You will receive all the updates on your mail and you can also follow us on Instagram. Our username is @the.official.india";
+}
+
+.card3-button:hover::after{
+  transition: 150ms;
+  content: "Yes Sure!!";
+}
+
+
+
+.body .btn{
+  
+  border-radius: 1rem;
+  background-color: #FF2A15;
+  margin-left: 3rem;
+  border: none;
+  outline: none;
+}
+
+.faq{
+  padding: 3rem 0;
+  
+}
+
+.faq h1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-card{
+  margin: 3rem;
+}
+
+.sponser-image{
+  width: 120px;
+  height: 120px;
+  margin: 3rem 0;
+}
+
+.sponser{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("parallex.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  
+  
+}
