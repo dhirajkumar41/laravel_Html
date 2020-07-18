@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -67,18 +67,120 @@ body {
   float: left;
 }
 
+.dropimg {
+  
+  /* color: white; */
+  /* padding: 16px;
+  font-size: 16px; */
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  margin-right: 2rem;
+  
+  float: right;
+  top:1rem;
+  right: 4rem;
+  
+  
+  position:fixed;
+  top:0;
+  z-index: 100;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+  border-radius: 1rem;
+}
+
+.dropdown-content p{
+  font-size: 15px;
+  color: red;
+  opacity: .7;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.dropdown-content h6{
+  color: red;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.dropdown-content .button{
+  display: flex;
+  margin-top: 4rem;
+  
+}
+
+
+
+
+/* Links inside the dropdown */
+/* .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} */
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex; 
+  right: 0;
+  display: block;       
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
 .header-register{
   font-size: 20px;
   
   float: right;
+} 
+
+.header-register .pathDrop1{
+  background-image: linear-gradient(145deg, #E40000 18%, #F17D04 100%);
   margin-top: 2rem;
   margin-right: 2rem;
-}
 
-.header-register .btn{
-  background-color: #FF2A15;
   color: white;
 }
+
+.header-register .pathDrop2{
+  
+  background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+  margin-top: 2rem;
+  margin-right: 2rem;
+
+  color: white;
+}
+
+.header-register .pathDrop1:hover{
+  background-position: right center;
+}
+
+/* .header-register .btn{
+  background-color: #FF2A15;
+  color: white;
+} */
 
 .banner{
   margin: 0;
@@ -90,6 +192,7 @@ body {
  position: relative; 
   width: 100%;
   height: 45rem;
+  z-index: -1;
 } 
 
 .text-block {
@@ -130,13 +233,20 @@ footer .powered{
 
 .card-footer{
   position: absolute;
-  bottom: 8rem;
-  left: 5rem;
-  color: red;
-  
+  bottom: 9rem;
+  left: 9rem;
+  color: white;
+  /* background-color: rgba(245, 245, 245, 0.4); */
+  width: 500px;
+  height: 400px;
+  background-image: linear-gradient(145deg, #E40000 18%, #F17D04 100%);
   border-radius: 1rem;
-  
 }
+  
+
+
+
+  
 
 .card-footer .card-title{
   padding-top: 1rem;
@@ -145,9 +255,7 @@ footer .powered{
   
 }
 
-.card-footer {
-  background-color: rgba(245, 245, 245, 0.8)
-}
+
 
 .card-footer .card-subtitle{
   padding-top: .1rem;
@@ -156,7 +264,7 @@ footer .powered{
 }
 
 .card-footer .card-link{
-  color: red;
+  color: white;
   font-size: 15px;
 }
 
@@ -265,6 +373,73 @@ footer .powered{
   outline: none;
 }
 
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  
+  background-color: #f1f1f1;
+  white-space: 4rem;
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+
+}
+
+.tab2{
+  margin-left: 10rem;
+}
+
+#tab3{
+  margin-left: 8rem;
+}
+
+#defaultOpen{
+  margin-left: 14rem;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  /* background-color: inherit; */
+  float: left;
+  border: none;
+  
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+.default,.paris,.tokyo{
+  margin-top: 2rem;
+}
+
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
 .faq{
   padding: 3rem 0;
   
@@ -321,6 +496,31 @@ body, html {
   .header-right {
     float: none;
   }
+   
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
   
+
+ .city-image{
+  
+  border-radius: 1rem;
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  bottom: 9rem;
+  right:  9rem;
   
 }
+
+/* Optional: Makes the sample page fill the window. */
+/* html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+
